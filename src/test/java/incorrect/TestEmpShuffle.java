@@ -1,6 +1,7 @@
 package incorrect;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -29,14 +30,14 @@ class TestEmpShuffle {
     @DisplayName("Post Shuffle: Sham is NOT the first employee")
     void testChangedFirstEmployee() {
         EM.shuffle();
-        assertEquals("Sham", EM.getEmployeeList().get(0).getName());
+        assertNotEquals("Sham", EM.getEmployeeList().get(0).getName());
     }
 
     @Test
     @DisplayName("Post Shuffle: Sham is the last employee")
     void testChangedLastEmployee() {
         EM.shuffle();
-        assertEquals("Sham", EM.getEmployeeList().get(0).getName());
+        assertEquals("Sham", EM.getEmployeeList().get(2).getName());
     }
 
     @AfterEach
