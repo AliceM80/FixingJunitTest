@@ -11,7 +11,7 @@ import main.java.EmployeeManager;
 
 class TestEmpShuffle {
 
-    EmployeeManager EM = null;
+    EmployeeManager EM = new EmployeeManager();
 
     @BeforeEach
     void init() {

@@ -12,7 +12,7 @@ import main.java.EmployeeManager;
 
 class TestEmpListSize {
 
-    EmployeeManager EM = null;
+    EmployeeManager EM = new EmployeeManager();
 
     @Test
     @DisplayName("Correct initial length of Employee List")

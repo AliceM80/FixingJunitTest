@@ -1,4 +1,5 @@
-package test.java.correct;
+/*
+package correct;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -8,11 +9,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import main.java.EmployeeManager;
+import main.java;
 
 class TestEmpShuffle {
 
-    EmployeeManager EM = null;
+    EmployeeManager EM = new EmployeeManager();
 
     @BeforeEach
 
@@ -32,3 +33,6 @@ class TestEmpShuffle {
     @AfterEach
 
 }
+*/
+
+
